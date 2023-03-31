@@ -8,10 +8,10 @@ class MongoDBClient:
         self.db = self.conn['bill-db']
      
     def insertBill(self, bill):
-        print(bill)
         self.db['bills'].insert_one(bill)
 
     def showBill(self, bill_id):    
-        bills_collection = self.client['bills']
-        pass 
+        bill_details = self.db['bills'].find_one({"bill_id": bill_id}, {'_id': False})
+        return bill_details
+        
 

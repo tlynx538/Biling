@@ -22,9 +22,8 @@ class AddBill(BaseModel):
 def home():
     return {"message": "Success"}
 
-@app.post('/create/bill')
+@app.post('/bill/create')
 def create_bill(bill_: AddBill):
-
     # generate bill id 
     bill_id = str(uuid.uuid4())
     # validate bill 
@@ -46,3 +45,11 @@ def create_bill(bill_: AddBill):
             return {"message": "Database Error has occured", "Error Message": str(e)}
     else:
         return {"message": "Error in Validating Prices"}
+    
+@app.get('/bill/find/'+'{bill_id}')
+def show_bill(bill_id):
+    bill = client.showBill(bill_id)
+    if bill is not None: 
+        return bill 
+    else:
+        return {"message" : "No Bill Found"}
