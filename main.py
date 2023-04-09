@@ -20,7 +20,7 @@ class AddBill(BaseModel):
 
 @app.get('/')
 def home():
-    return {"message": "Success"}
+    return {"Welcome to Billing API!"}
 
 @app.post('/bill/create')
 def create_bill(bill_: AddBill):
