@@ -46,7 +46,7 @@ def create_bill(bill_: AddBill):
 
     else:
         return {"message": "Error in Validating Prices"}
-    
+
 @app.get('/bill/find/'+'{bill_id}')
 def show_bill(bill_id):
     bill = client.showBill(bill_id)

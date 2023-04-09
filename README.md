@@ -1,5 +1,5 @@
 # Simple Billing API
-## API for creating, updating and viewing bills.
+## API for creating, updating, deleting and viewing bills.
 
 ### Stack Used:
 1. MongoDB Database/pymongo.

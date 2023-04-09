@@ -25,5 +25,8 @@ class MongoDBClient:
             return True 
         except Exception as e:
             return [e, False]
+    
+    def updateBill(self, bill_id, bill):
+        pass
         
 
