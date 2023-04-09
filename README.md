@@ -8,7 +8,7 @@
 ### Features:
 1. Creates Bill by using '/bill/create' route.
 2. Shows Bill by bill id using '/bill/find/'.
-3. Delete Bill by bill id using '/bill/delete/'.
+3. Delete Bill by bill id using '/bill/delete/'
 
 ### Installation and Setup:
 1. Install using `pip install -r requirements.txt` to install packages.
