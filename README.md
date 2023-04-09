@@ -8,7 +8,7 @@
 ### Features:
 1. Creates Bill by using '/bill/create' route.
 2. Shows Bill by bill id using '/bill/find/'.
-3. Delete Bill by bill id using '/bill/delete/'
+3. Delete Bill by bill id using '/bill/delete/'.
 
 ### Installation and Setup:
 1. Install using `pip install -r requirements.txt` to install packages.
@@ -19,3 +19,7 @@
 ### TODO:
 1. Auth (possibly using Passport or something equivalent)
 2. Integration for other services.
+
+
+### Notes:
+1. There will be no update logic, because a new bill needs to be created and the one that is slated to be updated shall be deleted. (By Design)

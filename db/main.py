@@ -14,7 +14,6 @@ class MongoDBClient:
         except Exception as e:
             return [e, False] 
 
-
     def showBill(self, bill_id):    
         bill_details = self.db['bills'].find_one({"bill_id": bill_id}, {'_id': False})
         return bill_details
