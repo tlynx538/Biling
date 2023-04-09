@@ -17,5 +17,5 @@
 
 ### TODO:
 1. Auth (possibly using Passport or something equivalent)
-2. Logic for Updating and Deleting Bills
+2. Logic for Updating Bills
 3. Integration for other services.
