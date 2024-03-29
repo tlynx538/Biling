@@ -3,7 +3,7 @@
 ## API for creating, deleting and viewing bills.
 
 [DEPRECATED]
-~~
+~
 
 ### Stack Used:
 
@@ -16,7 +16,8 @@
 2. Make sure MongoDB is installed and running correctly.
 3. Once installed, run using `uvicorn main:app --reload`
 4. Use Postman to work with the routes.
-   ~~
+
+~
 
 ### Features:
 
