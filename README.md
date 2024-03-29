@@ -3,21 +3,20 @@
 ## API for creating, deleting and viewing bills.
 
 [DEPRECATED]
-~
 
-### Stack Used:
+~~### Stack Used:~~
 
-1. MongoDB Database/pymongo.
-2. FastAPI
+~~1. MongoDB Database/pymongo.~~
+~~2. FastAPI~~
 
-### Installation and Setup:
+~~### Installation and Setup:~~
 
-1. Install using `pip install -r requirements.txt` to install packages.
-2. Make sure MongoDB is installed and running correctly.
-3. Once installed, run using `uvicorn main:app --reload`
-4. Use Postman to work with the routes.
+~~1. Install using `pip install -r requirements.txt` to install packages.~~
 
-~
+~~2. Make sure MongoDB is installed and running correctly.~~
+~~3. Once installed, run using `uvicorn main:app --reload`~~
+
+~~4. Use Postman to work with the routes.~~
 
 ### Features:
 
@@ -33,4 +32,4 @@
 ### Notes:
 
 1. There will be no update logic, because a new bill needs to be created and the one that is slated to be updated shall be deleted. (By Design)
-2. Update 03/29/2024: Porting Python API to Go API for full support in implementing coroutines and possibly for following non sequential, non-locking operations.
+2. Update 03/29/2024: Porting Python API to Go API for full support in implementing coroutines and possibly for following non-sequential/parallel/asynchronous, non-locking operations.
